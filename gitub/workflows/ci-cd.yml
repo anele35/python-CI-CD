@@ -25,7 +25,7 @@ jobs:
       run: pytest
 
     - name: SonarQube Scan
-      run: sonar-scanner -Dsonar.projectKey=your_project_key -Dsonar.sources=. -Dsonar.host.url=your_sonarqube_url -Dsonar.login=your_sonarqube_login_token
+      run: sonar-scanner -Dsonar.projectKey=squ_9553b384fdb41109503d6437a6e8fbddf8c8ef7c -Dsonar.sources=. -Dsonar.host.url=your_sonarqube_url -Dsonar.login=your_sonarqube_login_token
 
     - name: Deploy with Ansible
       run: ansible-playbook deploy.yml
