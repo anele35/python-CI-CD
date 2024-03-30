@@ -15,5 +15,5 @@
   tasks:
     - name: Restart your service
       systemd:
-        name: deneme.py.py
+        name: deneme.py
         state: restarted
