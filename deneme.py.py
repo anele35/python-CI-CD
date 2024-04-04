@@ -1,7 +1,7 @@
 print("Hoşgeldin! Öncelikle sana hitap edebilmek için adını öğrenebilir miyim?")
 isim=str(input())
 
-print("Merhaba" + " " + isim + ". Demek bu ay izin yaptık:) Hadi gel hesaplayalım!" )
+print("Merhaba" + " " + isim + ". Hadi gel hesaplayalım!" )
 
 
 maas=int(input("Aylık net maaşını rakamlar ile girer misin? Araya nokta koyma:"))
