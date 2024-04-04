@@ -11,5 +11,5 @@ kalanmaas= float(maas - ((maas / 30) * izin))
 
 sonuc = ("Bu ay kesintiden sonra kalan maaşın:" + " " + str(kalanmaas))
 print (sonuc)
-print (str(kalanmaas) "TL. Nerden baksan güzel para kanka" "Güle güle harca. Şimdilik kapanıyorum, iyi günler")
+print (str(kalanmaas) "TL. Güle güle harca. Şimdilik kapanıyorum, iyi günler")
 exit()
