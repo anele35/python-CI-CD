@@ -1,22 +1,26 @@
-name: Build
+name: SonarQube Analizi
 
 on:
   push:
     branches:
       - main
 
-
 jobs:
   build:
-    name: Build
+    name: Build ve sonar analiz
     runs-on: ubuntu-latest
     permissions: read-all
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0  
-      - uses: sonarsource/sonarqube-scan-action@master
+          fetch-depth: 0
+
+      - name: Python bgmllk ykle
+        run: |
+          python -m pip install -r requirements.txt
+
+      - name: sonarqube basla
+        uses: sonarsource/sonarqube-scan-action@master
         env:
-          SONAR_TOKEN: ${{ sqp_30ec8b19c67090941e63f4137b3715ec776ec8eb }}
-          SONAR_HOST_URL: ${{ http://5.75.146.62:9000 }}
-      
+          SONAR_TOKEN: ${{ sqp_9cc03e422cee5268d6b7c2ae4346d2d41db08d9e }}
+          SONAR_HOST_URL: http://5.75.146.62:9000
